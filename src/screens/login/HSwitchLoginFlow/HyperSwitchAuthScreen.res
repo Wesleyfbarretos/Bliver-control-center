@@ -30,7 +30,7 @@ module AuthPage = {
             <TermsAndCondition />
           </Div>
         </div>
-        <PageFooterSection />
+        // <PageFooterSection />
       </div>
 
     <HSwitchUtils.BackgroundImageWrapper

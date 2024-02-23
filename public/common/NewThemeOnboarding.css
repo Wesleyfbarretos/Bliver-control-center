@@ -195,6 +195,14 @@ tr.introjs-showElement > th {
   border-radius: 6px;
 }
 
+.bg-blue-700 {
+    background-color: #F46A35;
+}
+
+.bg-blue-900 {
+    background-color: #F46A35;
+}
+
 .introjs-nextbutton {
   text-shadow: none !important;
   font-family: Inter !important;

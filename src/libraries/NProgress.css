@@ -3,6 +3,14 @@
   pointer-events: none;
 }
 
+.bg-blue-700 {
+    background-color: #F46A35;
+}
+
+.bg-blue-900 {
+    background-color: #F46A35;
+}
+
 #nprogress .bar {
   background: #29d;
 

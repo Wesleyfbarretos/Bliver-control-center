@@ -3,7 +3,7 @@ let getOption = %raw(`
      return {
     clientSecret,
     appearance: {
-      theme: "charcoal",
+      theme: "tabs",
       variables: {
         colorPrimary: "#006DF9",
         colorBackground: "transparent",
@@ -107,7 +107,7 @@ fields: {
         },
       },
      layout: {
-        type: "tabs",
+        type: "accordion",
         defaultCollapsed: false,
         radios: true,
         spacedAccordionItems: false,

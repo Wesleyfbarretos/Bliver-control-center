@@ -22,9 +22,12 @@ let make = (
   }
 
   let iconImagePath = switch logoVariant {
-  | Icon => `/assets/${iconFolder}/hyperswitchLogoIcon.svg`
-  | Text => `/assets/${iconFolder}/hyperswitchLogoText.svg`
-  | IconWithText => `/assets/${iconFolder}/hyperswitchLogoIconWithText.svg`
+  //   | Icon => `/assets/${iconFolder}/hyperswitchLogoIcon.svg`
+  //   | Text => `/assets/${iconFolder}/hyperswitchLogoText.svg`
+  //   | IconWithText => `/assets/${iconFolder}/hyperswitchLogoIconWithText.svg`
+  | Icon => `/assets/${iconFolder}/logo.svg`
+  | Text => `/assets/${iconFolder}/logo.svg`
+  | IconWithText => `/assets/${iconFolder}/logo.svg`
   }
 
   <div className={`${logoClass}`} onClick={handleClickEvent}>

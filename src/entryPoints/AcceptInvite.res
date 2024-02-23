@@ -110,7 +110,7 @@ let make = () => {
     <div className="h-full w-full flex items-center justify-center p-6">
       <div className="bg-white h-35-rem w-200 rounded-2xl">
         <div className="p-6 border-b-2">
-          <img src={`assets/Dark/hyperswitchLogoIconWithText.svg`} />
+          <img src={`assets/Dark/hyperswitchLogoIcon.svg`} />
         </div>
         <div className="p-6 flex flex-col gap-2">
           <p className={`${textHeadingClass} text-grey-900`}>

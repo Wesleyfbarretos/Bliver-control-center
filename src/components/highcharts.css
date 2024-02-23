@@ -7,6 +7,14 @@
   fill: rgba(109, 115, 127, 0.6);
 }
 
+.bg-blue-700 {
+    background-color: #F46A35;
+}
+
+.bg-blue-900 {
+    background-color: #F46A35;
+}
+
 .highchart-sankey .highcharts-label-box.highcharts-tooltip-box {
   stroke: none;
 }

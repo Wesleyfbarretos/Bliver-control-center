@@ -3,7 +3,7 @@ name: Release a new nightly hyperswitch control center version
 on:
   schedule:
     - cron: "30 14 * * 0-4" # Run workflow at 8 PM IST every Sunday-Thursday
-
+zc
   workflow_dispatch:
 
 concurrency:

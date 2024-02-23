@@ -2,6 +2,14 @@
   display: block;
 }
 
+.bg-blue-700 {
+    background-color: #F46A35;
+}
+
+.bg-blue-900 {
+    background-color: #F46A35;
+}
+
 .introjs-showElement {
   z-index: 1100 !important;
 }
