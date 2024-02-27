@@ -114,7 +114,7 @@ let make = () => {
         </div>
         <div className="p-6 flex flex-col gap-2">
           <p className={`${textHeadingClass} text-grey-900`}>
-            {"Hey there, welcome to Hyperswitch!"->React.string}
+            {"Hey there, welcome to Bliver!"->React.string}
           </p>
           <p className=textSubHeadingClass>
             {"Please accept the your pending invitations"->React.string}

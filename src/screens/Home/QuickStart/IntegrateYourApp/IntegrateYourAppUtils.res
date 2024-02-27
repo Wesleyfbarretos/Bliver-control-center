@@ -10,7 +10,7 @@ let getCurrentMigrateFromStripeStepHeading = (step: migrateFromStripeSteps) => {
   | InstallDeps => "Install Dependencies"
   | ReplaceAPIKeys => "Replace API Key"
   | ReconfigureCheckout => "Reconfigure Checkout Form"
-  | LoadCheckout => "Load Hyperswitch Checkout"
+  | LoadCheckout => "Load Bliver Checkout"
   }
 }
 
@@ -28,7 +28,7 @@ let getCurrentStandardIntegrationStepHeading = (step: standardIntegrationSteps) 
   switch step {
   | DownloadTestAPIKey => "Download Test API Key"
   | CreatePayment => "Create A Payment"
-  | DisplayCheckout => "Display Hyperswitch Checkout Page"
+  | DisplayCheckout => "Display Bliver Checkout Page"
   | DisplayPaymentConfirmation => "Display Payment Confirmation Page"
   }
 }

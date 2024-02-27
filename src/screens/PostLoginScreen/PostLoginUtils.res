@@ -29,7 +29,7 @@ let paymentProcessorQuestions: questionsType = {
   key: "integrated_processors",
 }
 let requirementsQuestion: questionsType = {
-  question: "What brings you to Hyperswitch?",
+  question: "What brings you to Bliver?",
   options: [
     {label: "Improve Conversion", value: "improve conversions"},
     {label: "Reduce Costs", value: "reduce costs"},

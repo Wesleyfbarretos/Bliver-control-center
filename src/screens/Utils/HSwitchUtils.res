@@ -32,8 +32,9 @@ module BackgroundImageWrapper = {
       <div
         className={`bg-no-repeat bg-center bg-hyperswitch_dark_bg bg-fixed ${customPageCss} ${heightWidthCss}`}
         style={ReactDOMStyle.make(
-          ~backgroundImage=`url(${backgroundImageUrl})`,
-          ~backgroundSize=`cover`,
+        //   ~backgroundImage=`url(${backgroundImageUrl})`,
+        //   ~backgroundSize=`cover`,
+          ~background="linear-gradient(136.4deg, #F5F1EE 5.96%, #F8D9C7 90.41%)",
           (),
         )}>
         {children->Option.getOr(React.null)}

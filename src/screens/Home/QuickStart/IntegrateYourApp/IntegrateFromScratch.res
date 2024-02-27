@@ -123,7 +123,7 @@ let make = (
     | DisplayCheckout =>
       <div className="flex flex-col gap-10">
         <div className="text-grey-50">
-          {"Open the Hyperswitch checkout for your user inside an iFrame to display the payment methods."->React.string}
+          {"Open the Bliver checkout for your user inside an iFrame to display the payment methods."->React.string}
         </div>
         <div className="flex flex-col gap-2">
           <div className="text-grey-900 font-medium"> {"Publishable Key"->React.string} </div>

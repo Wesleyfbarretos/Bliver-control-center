@@ -24,7 +24,7 @@ module ReplaceAPIKey = {
       <div className={`${dividerColor} px-2`} />
       <ProdOnboardingUIUtils.SetupWebhookProcessor
         headerSectionText="Publishable Key"
-        subtextSectionText="Use this key to authenticate all calls from your application's client to Hyperswitch SDK"
+        subtextSectionText="Use this key to authenticate all calls from your application's client to Bliver SDK"
         customRightSection={<HelperComponents.KeyAndCopyArea
           copyValue=publishablekeyMerchant
           shadowClass="shadow shadow-hyperswitch_box_shadow md:!w-max"
@@ -45,7 +45,7 @@ module ReplaceAPIKey = {
         <UIUtils.RenderIf condition={paymentResponseHashKey->LogicUtils.isNonEmptyString}>
           <ProdOnboardingUIUtils.SetupWebhookProcessor
             headerSectionText="Payment Response Hash Key"
-            subtextSectionText="Download the provided key to authenticate and verify live events sent by Hyperswitch. Learn more"
+            subtextSectionText="Download the provided key to authenticate and verify live events sent by Bliver. Learn more"
             customRightSection={<HelperComponents.KeyAndCopyArea
               copyValue=paymentResponseHashKey
               shadowClass="shadow shadow-hyperswitch_box_shadow md:!w-full"
@@ -56,7 +56,7 @@ module ReplaceAPIKey = {
       </UIUtils.RenderIf>
       <ProdOnboardingUIUtils.SetupWebhookProcessor
         headerSectionText="API Key"
-        subtextSectionText="Use this key to authenticate all API requests from your application's server to Hyperswitch server"
+        subtextSectionText="Use this key to authenticate all API requests from your application's server to Bliver server"
         customRightSection={<UserOnboardingUIUtils.DownloadAPIKeyButton
           buttonText="Create and download API key" buttonStyle="!rounded-md"
         />}
@@ -101,7 +101,7 @@ module SetupWebhookUser = {
       <UIUtils.RenderIf condition={paymentResponseHashKey->LogicUtils.isNonEmptyString}>
         <ProdOnboardingUIUtils.SetupWebhookProcessor
           headerSectionText="Payment Response Hash Key"
-          subtextSectionText="Download the provided key to authenticate and verify live events sent by Hyperswitch. Learn more"
+          subtextSectionText="Download the provided key to authenticate and verify live events sent by Bliver. Learn more"
           customRightSection={<HelperComponents.KeyAndCopyArea
             copyValue=paymentResponseHashKey
             shadowClass="shadow shadow-hyperswitch_box_shadow md:!w-full"
@@ -222,7 +222,7 @@ let make = (~pageView, ~setPageView, ~previewState: option<ProdOnboardingTypes.p
     <ProdOnboardingUIUtils.WarningBlock
       customComponent={Some(<>
         <p className={`${subTextStyle} !opacity-100`}>
-          {"Not integrated with Hyperswitch yet? Visit our"->React.string}
+          {"Not integrated with Bliver yet? Visit our"->React.string}
         </p>
         <p
           className={`${highlightedText} cursor-pointer`}

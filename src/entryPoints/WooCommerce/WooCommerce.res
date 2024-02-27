@@ -120,7 +120,7 @@ module ConfigurePlugin = {
                 <div className="col-span-2">
                   <div className="font-medium"> {"Payment Response Hash Key"->React.string} </div>
                   <div className="text-gray-500 mt-2">
-                    {"This helps to authenticate and verify live events send by Hyperswitch."->React.string}
+                    {"This helps to authenticate and verify live events send by Bliver."->React.string}
                   </div>
                 </div>
                 <UserOnboardingUIUtils.PaymentResponseHashKeyArea />

@@ -147,7 +147,7 @@ let make = () => {
         </div>
         <div className="flex items-center gap-2">
           <CheckBoxIcon isSelected setIsSelected={_ => setIsSelected(prev => !prev)} />
-          <p> {"I have read and agree to Hyperswitch's Services Agreement."->React.string} </p>
+          <p> {"I have read and agree to Bliver's Services Agreement."->React.string} </p>
         </div>
       </div>
     </div>

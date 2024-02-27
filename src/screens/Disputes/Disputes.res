@@ -40,7 +40,7 @@ let make = () => {
         className="flex border items-start border-blue-800 text-sm rounded-md gap-2 px-4 py-3 mt-5">
         <Icon name="info-vacent" className="text-blue-900 mt-1" size=18 />
         <p>
-          {"Missing disputes? Disputes might not be supported for your payment processor or might not yet have been integrated with hyperswitch. Please check the"->React.string}
+          {"Missing disputes? Disputes might not be supported for your payment processor or might not yet have been integrated with bliver. Please check the"->React.string}
           <a href="https://hyperswitch.io/pm-list" target="_blank" className="text-blue-900">
             {" feature matrix "->React.string}
           </a>

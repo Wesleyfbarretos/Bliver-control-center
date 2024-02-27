@@ -235,7 +235,7 @@ module ControlCenter = {
         <CardLayout width="w-full" customStyle={isLiveMode ? "" : "h-4/6"}>
           <CardHeader
             heading="Credentials and Keys"
-            subHeading="Your secret credentials to start integrating hyperswitch."
+            subHeading="Your secret credentials to start integrating bliver."
             leftIcon=Some("merchantInfo")
             customSubHeadingStyle="w-full max-w-none"
           />

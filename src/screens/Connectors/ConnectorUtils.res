@@ -323,7 +323,7 @@ let stripeTestInfo = {
 }
 
 let paypalTestInfo = {
-  description: "A paypal test processor to simulate payment flows and experience hyperswitch checkout.",
+  description: "A paypal test processor to simulate payment flows and experience bliver checkout.",
 }
 
 let wiseInfo = {

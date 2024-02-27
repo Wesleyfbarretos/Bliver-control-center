@@ -63,7 +63,7 @@ let sidebarTextFromVariant = pageView => {
   | SETUP_CREDS => "Setup Credentials"
   | SETUP_WEBHOOK_PROCESSOR => "Configure Processor Webhooks"
   | REPLACE_API_KEYS => "Replace API keys & Live Endpoints"
-  | SETUP_WEBHOOK_USER => "Configure Hyperswitch Webhooks"
+  | SETUP_WEBHOOK_USER => "Configure Bliver Webhooks"
   // | TEST_LIVE_PAYMENT => "Test a live Payment"
   | SETUP_COMPLETED => "Setup Completed"
   | _ => ""
@@ -78,7 +78,7 @@ let getCheckboxText = connectorName => {
       ->ConnectorUtils.getConnectorNameString
       ->LogicUtils.capitalizeString}`
   | BLUESNAP => `I have uploaded PCI DSS Certificate`
-  | ADYEN => "I have submitted Hyperswitch's PCI Certificates to Adyen"
+  | ADYEN => "I have submitted Bliver's PCI Certificates to Adyen"
   | _ => ""
   }
 }

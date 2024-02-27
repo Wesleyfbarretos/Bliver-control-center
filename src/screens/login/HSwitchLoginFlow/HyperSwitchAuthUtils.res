@@ -336,7 +336,7 @@ module Header = {
 
     let cardHeaderText = switch authType {
     | LoginWithPassword | LoginWithEmail => "Hey there, Welcome back!"
-    | SignUP => "Welcome to Hyperswitch"
+    | SignUP => "Welcome to Bliver"
     | MagicLinkEmailSent
     | ForgetPasswordEmailSent
     | ResendVerifyEmailSent => "Please check your inbox"
@@ -399,7 +399,7 @@ module Header = {
       | LoginWithPassword | LoginWithEmail =>
         !isLiveMode
           ? getHeaderLink(
-              ~prefix="New to Hyperswitch?",
+              ~prefix="New to Bliver?",
               ~authType=SignUP,
               ~path="/register",
               ~sufix="Sign up",
@@ -408,7 +408,7 @@ module Header = {
 
       | SignUP =>
         getHeaderLink(
-          ~prefix="Already using Hyperswitch?",
+          ~prefix="Already using Bliver?",
           ~authType=isMagicLinkEnabled ? LoginWithEmail : LoginWithPassword,
           ~path="/login",
           ~sufix="Sign in",

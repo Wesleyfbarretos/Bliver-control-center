@@ -52,7 +52,7 @@ let make = (~showModal, ~setShowModal) => {
   let businessName = FormRenderer.makeFieldInfo(
     ~label="Business name",
     ~name="merchant_name",
-    ~placeholder="Eg: HyperSwitch Pvt Ltd",
+    ~placeholder="Eg: Bliver Pvt Ltd",
     ~customInput=InputFields.textInput(),
     ~isRequired=true,
     (),

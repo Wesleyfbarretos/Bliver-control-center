@@ -197,7 +197,7 @@ module Manual = {
         <p className="text-base	font-normal	">
           {"Follow our"->React.string}
           <a
-            href="https://hyperswitch.io/docs/paymentMethods/wallets#apple-pay"
+            href="https://bliver.io/docs/paymentMethods/wallets#apple-pay"
             target="_blank"
             className="text-base	font-normal	 text-status-blue ml-1 underline underline-offset-4">
             {" Apple Pay Setup Guide "->React.string}

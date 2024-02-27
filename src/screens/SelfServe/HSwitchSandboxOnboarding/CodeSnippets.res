@@ -129,7 +129,7 @@ let htmlLoad = `<script src="https://beta.hyperswitch.io/v1/HyperLoader.js"></sc
   <div id="payment-message" class="hidden"></div>
 </form>`
 
-let reactLoad = `const hyperPromise = loadHyper("YOUR_PUBLISHABLE_KEY");
+let reactLoad = `const bliverPromise = loadHyper("YOUR_PUBLISHABLE_KEY");
 const [clientSecret, setClientSecret] = useState("");`
 
 let htmlInitialize = `async function initialize() {
@@ -199,10 +199,10 @@ var unifiedCheckoutOptions = {
     {message && <div id='payment-message'>{message}</div>}
 </form>"
 
-let nodeInstallDependencies = `npm install @juspay-tech/hyperswitch-node`
+let nodeInstallDependencies = `npm install @bliver-tech/bliver-node`
 
-let reactInstallDependencies = `npm install @juspay-tech/hyper-js
-npm install @juspay-tech/react-hyper-js`
+let reactInstallDependencies = `npm install @bliver-tech/bliver-js
+npm install @bliver-tech/react-bliver-js`
 
 let rubyRequestPayment = `require 'net/http'
 require 'sinatra'
@@ -662,7 +662,7 @@ let nodeReplaceApiKey: UserOnboardingTypes.migratestripecode = {
   const stripe = require("stripe")("your_stripe_api_key");
   const paymentIntent = await stripe.paymentIntents.create({...})`,
   to: `//TO 
-  const hyper = require("@juspay-tech/hyperswitch-node")("your_hyperswitch_api_key");
+  const bliver = require("@bliver-tech/bliver-node")("your_bliver_api_key");
   const paymentIntent = await stripe.paymentIntents.create({...})`,
 }
 
@@ -670,7 +670,7 @@ let reactCheckoutForm: UserOnboardingTypes.migratestripecode = {
   from: `// FROM
   import { PaymentElement,  useStripe, useElements,} from "@stripe/react-stripe-js";`,
   to: `//TO
-  import {   UnifiedCheckout, useStripe,  useElements,} from "@juspay-tech/react-hyper-js";`,
+  import {   UnifiedCheckout, useStripe,  useElements,} from "@bliver-tech/react-bliver-js";`,
 }
 let htmlCheckoutForm: UserOnboardingTypes.migratestripecode = {
   from: `// FROM
@@ -683,19 +683,19 @@ let reactHyperSwitchCheckout: UserOnboardingTypes.migratestripecode = {
   from: `// FROM
   const stripePromise = loadStripe("your_stripe_publishable_key");`,
   to: `//TO 
-  const hyperPromise = loadHyper("your_hyperswitch_publishable_key");
+  const bliverPromise = loadBliver("your_bliver_publishable_key");
   `,
 }
 let htmlHyperSwitchCheckout: UserOnboardingTypes.migratestripecode = {
   from: `// FROM 
   const stripe = Stripe("your_stripe_publishable_key");`,
   to: `// To
-  const hyper = Hyper("your_hyperswitch_publishable_key"); `,
+  const bliver = Hyper("your_bliver_publishable_key"); `,
 }
 
-let nodeMigrateFromStripeDXForReact = `npm install @juspay-tech/react-hyper-js
-npm install @juspay-tech/hyper-js
-npm install @juspay-tech/hyperswitch-node
+let nodeMigrateFromStripeDXForReact = `npm install @bliver-bliver/react-hyper-js
+npm install @bliver-bliver/bliver-js
+npm install @bliver-bliver/bliverswitch-node
 `
 let nodeMigrateFromStripeDXForHTML = `npm install @juspay-tech/hyperswitch-node`
 

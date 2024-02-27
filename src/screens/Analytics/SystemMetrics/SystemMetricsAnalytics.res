@@ -196,7 +196,7 @@ module HSiwtchPaymentConfirmLatency = {
                 {"Hyperswitch overhead for payment confirm"->React.string}
               </div>
               <ToolTip
-                description="Average time added by the Hyperswitch application to the overall Payments Confirm API latency"
+                description="Average time added by the Bliver application to the overall Payments Confirm API latency"
                 toolTipFor={<div className="cursor-pointer">
                   <Icon name="info-vacent" size=13 />
                 </div>}

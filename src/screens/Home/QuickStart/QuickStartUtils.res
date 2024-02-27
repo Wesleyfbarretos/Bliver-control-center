@@ -47,12 +47,12 @@ let connectorChoiceVariantToString = variantValue =>
 let connectorChoiceArray: array<landingChoiceType> = [
   {
     displayText: "Single Payment Processor",
-    description: "Connect any one processor and test a payment with Hyperswitch Checkout",
+    description: "Connect any one processor and test a payment with Bliver Checkout",
     variantType: #SinglePaymentProcessor,
   },
   {
     displayText: "Multiple processors with Smart Routing",
-    description: "Connect a primary and secondary processor, define smart routing rules and test a payment with Hyperswitch Checkout",
+    description: "Connect a primary and secondary processor, define smart routing rules and test a payment with Bliver Checkout",
     variantType: #MultipleProcessorWithSmartRouting,
   },
 ]
@@ -65,7 +65,7 @@ let getTypeOfConfigurationArray: ConnectorTypes.connectorName => array<
   let testAPIDescription = switch selectedConnector {
   | STRIPE | PAYPAL =>
     `We've got you covered. Try connecting with our test processor modeled like ${connectorName} to continue your setup.`
-  | _ => "We've got you covered. Try connecting with one of Hyperswitch's test processor to continue your setup."
+  | _ => "We've got you covered. Try connecting with one of Bliver's test processor to continue your setup."
   }
   [
     {
@@ -106,7 +106,7 @@ let integrateYourAppArray: array<landingChoiceType> = [
   },
   {
     displayText: "Standard Integration",
-    description: "Integrate Hyperswitch into your app with four simple steps",
+    description: "Integrate Bliver into your app with four simple steps",
     variantType: #StandardIntegration,
     footerTags: ["Code required", "Supports all platforms"],
     leftIcon: "hyperswitch-logo-short",
@@ -314,7 +314,7 @@ let getSidebarOptionsForIntegrateYourApp: (
           status: enumValue.reconfigureCheckout->getStatusFromString,
         },
         {
-          title: "Load Hyperswitch Checkout",
+          title: "Load Bliver Checkout",
           status: enumValue.loadCheckout->getStatusFromString,
         },
       ],
@@ -347,7 +347,7 @@ let getSidebarOptionsForIntegrateYourApp: (
           status: enumValue.createPayment->getStatusFromString,
         },
         {
-          title: "Display Hyperswitch Checkout",
+          title: "Display Bliver Checkout",
           status: enumValue.displayCheckout->getStatusFromString,
         },
         {
@@ -462,7 +462,7 @@ let getSidebarOptionsForConnectProcessor: (
         link: "/quick-start",
       },
       {
-        title: "Try hyperswitch checkout",
+        title: "Try Bliver checkout",
         status: String(enumValue.testPayment.payment_id)->getStatusValue(
           #TestPayment,
           currentPageStateEnum,
@@ -485,7 +485,7 @@ let getSidebarOptionsForConnectProcessor: (
         link: "/quick-start",
       },
       {
-        title: "Try hyperswitch checkout",
+        title: "Try Bliver checkout",
         status: String(enumValue.testPayment.payment_id)->getStatusValue(
           #TestPayment,
           currentPageStateEnum,

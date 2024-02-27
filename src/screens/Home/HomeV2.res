@@ -179,7 +179,7 @@ module QuickStart = {
         <div className="flex flex-col gap-2">
           <p className={getTextClass((H2, Optional))}> {"Quick Start"->React.string} </p>
           <p className=subtextStyle>
-            {"Configure and start using Hyperswitch to get an overview of our offerings and how hyperswitch can help you control your payments"->React.string}
+            {"Configure and start using Bliver to get an overview of our offerings and how bliver can help you control your payments"->React.string}
           </p>
         </div>
         <HomePageHorizontalStepper stepperItemsArray=HomeUtils.homepageStepperItems />
@@ -299,7 +299,7 @@ module Resources = {
         id: "tryTheDemo",
         icon: "docs.svg",
         headerText: "Try a test payment",
-        subText: "Experience the Hyperswitch Unified checkout using test credentials",
+        subText: "Experience the Bliver Unified checkout using test credentials",
         redirectLink: "",
         access: userPermissionJson.paymentWrite,
       },

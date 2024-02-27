@@ -35,7 +35,7 @@ module NewAccountCreationModal = {
     let companyName = FormRenderer.makeFieldInfo(
       ~label="Company Name",
       ~name="company_name",
-      ~placeholder="Eg: HyperSwitch Pvt Ltd",
+      ~placeholder="Eg: Bliver Pvt Ltd",
       ~customInput=InputFields.textInput(),
       ~isRequired=true,
       (),

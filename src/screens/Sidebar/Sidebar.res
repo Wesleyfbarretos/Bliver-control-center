@@ -34,8 +34,8 @@ module MenuOption = {
 module SidebarOption = {
   @react.component
   let make = (~isExpanded, ~name, ~icon, ~isSelected) => {
-    let textBoldStyles = isSelected ? "font-bold" : "font-semibold opacity-60"
-    let iconColor = isSelected ? "text-white" : "text-white opacity-60"
+    let textBoldStyles = isSelected ? "font-bold" : "font-semibold"
+    let iconColor = isSelected ? "text-white" : "text-white"
 
     if isExpanded {
       <div className="flex items-center gap-5">
@@ -248,7 +248,7 @@ module NestedSectionItem = {
     ~isSideBarExpanded,
   ) => {
     open UIUtils
-    let iconColor = isAnySubItemSelected ? "text-white" : "text-white opacity-60"
+    let iconColor = isAnySubItemSelected ? "text-white" : "text-white"
 
     let iconOuterClass = if !isSideBarExpanded {
       `${isAnySubItemSelected ? "" : ""} rounded-sm p-4 rounded-lg`
@@ -397,7 +397,7 @@ module SidebarNestedSection = {
     } else {
       `cursor-pointer rounded-lg rounded-sm`
     }
-    let expandedTextColor = isAnySubItemSelected ? "text-white" : "!text-offset_white !opacity-60"
+    let expandedTextColor = isAnySubItemSelected ? "text-white" : "!text-offset_white"
     let areAllSubLevelsHidden = section.links->Array.reduce(true, (acc, subLevelItem) => {
       acc &&
       switch subLevelItem {
@@ -543,7 +543,10 @@ let make = (
       <div
         ref={sideBarRef->ReactDOM.Ref.domRef}
         className={`bg-sidebar-blue flex h-full flex-col transition-all duration-100 ${sidebarClass} relative inset-0`}
-        style={ReactDOMStyle.make(~width=sidebarWidth, ())}>
+        style={ReactDOMStyle.make(
+            ~width=sidebarWidth,
+            ~backgroundColor="rgb(244 106 53 / .8)",
+            ())}>
         <div className="flex items-center justify-between p-1 mr-2">
           <div
             className={`flex align-center mt-4 pl-3 mb-6 pr-4 ml-1 gap-5 cursor-default`}
@@ -600,7 +603,7 @@ let make = (
           })
           ->React.array}
         </div>
-        <div className="flex items-center justify-between mb-5 mt-2 mx-2 mr-2 hover:bg-[#334264]">
+        <div className="flex items-center justify-between mb-5 mt-2 mx-2 mr-2 hover:bg-[#334264] rounded-xl">
           <RenderIf condition={isExpanded}>
             <Popover className="relative inline-block text-left">
               {popoverProps => <>
@@ -623,7 +626,7 @@ let make = (
                         description=email
                         toolTipFor={<RenderIf condition={isExpanded}>
                           <div
-                            className={`w-[${profileMaxWidth}] text-sm font-medium text-gray-400 dark:text-gray-600 text-ellipsis overflow-hidden`}>
+                            className={`w-[${profileMaxWidth}] text-sm text-white font-medium text-gray-400 dark:text-gray-600 text-ellipsis overflow-hidden`}>
                             {email->React.string}
                           </div>
                         </RenderIf>}

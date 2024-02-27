@@ -54,7 +54,7 @@ let make = () => {
     <div className="flex flex-row w-full mb-4 text-sm">
       <p className="text-grey-700 opacity-50 leading-5">
         <p className="inline">
-          {"Apple Pay cannot be tested from the dashboard as it is registered with merchant domain name and not app.hyperswitch. Please test using merchant SDK - refer the "->React.string}
+          {"Apple Pay cannot be tested from the dashboard as it is registered with merchant domain name and not app.bliver. Please test using merchant SDK - refer the "->React.string}
         </p>
         <a
           className="inline text-blue-600 underline underline-offset-4 decoration-blue-600"
